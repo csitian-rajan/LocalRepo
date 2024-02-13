@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <style>
+      .dark {
+        background-color: #000;
+        color: white;
+      }
+      .light {
+        background-color: white;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="mode">Change Mode</button>
+    <h1>This is Rajan kumar Raut</h1>
+    <script>
+      let modeBtn = document.querySelector("#mode");
+      let currMode = "light";
+      let body=document.querySelector("body");
+      modeBtn.addEventListener("click", () => {
+        if (currMode === "light") {
+          currMode = "dark";
+          body.classList.add("dark");
+          body.classList.remove("light");
+        } else {
+          currMode = "light";
+          body.classList.add("light");
+          body.classList.add("dark");
+        }
+        console.log(currMode);
+      });
+    </script>
+  </body>
+</html>

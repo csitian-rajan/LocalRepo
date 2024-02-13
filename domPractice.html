@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom Practice</title>
+    <style>
+        .content{
+            /* height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            margin:5px;
+            text-align: center;
+            background-color:aquamarine ; */
+            color: red;
+        }
+        .newClass{
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <p class="content">Hello iam rajan</p>
+ <!-- <h2>Hello javscript</h2>
+    <div class="box">First div</div>
+    <div class="box">Secound Div</div>
+    <div class="box">third div</div>  -->
+  <script>
+        // let h2=document.querySelector('h2')
+        // console.dir(h2.innerText);
+        // h2.innerText=h2.innerText+" from apna college"//concatinate
+
+        // let divs=document.querySelectorAll(".box");
+        // console.log(divs[0]);
+        // divs[0].innerText="new unique val 1";
+        
+        let newBtn=document.createElement("button");
+        newBtn.innerText="click me !";
+
+        newBtn.style.color="white";
+        newBtn.style.backgroundColor="red";
+        document.querySelector("body").prepend(newBtn);
+
+        let para=document.querySelector("p");
+        para.getAttribute("class")
+
+
+        
+     
+    </script>
+</body>
+</html>
